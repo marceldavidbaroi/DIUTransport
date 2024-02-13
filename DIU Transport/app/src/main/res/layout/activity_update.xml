@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg1"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/window_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:text="Update"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/layout_header"
+    android:fillViewport="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_header"
+        android:background="@drawable/bg1"
+        >
+        <TextView
+            android:id="@+id/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Location Entry "
+            android:textStyle="bold"
+            android:textSize="34dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/et_B1"
+            android:layout_below="@id/headtext"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Surjomukhi 1"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/btn_B1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headtext"
+            android:text="Submit"
+            android:backgroundTint="#FF9800"
+            android:layout_marginLeft="280dp"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/et_B2"
+            android:layout_below="@+id/et_B1"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Surjomukhi 2"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/btn_B2"
+            android:layout_below="@+id/et_B1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="#FF9800"
+            android:layout_marginLeft="280dp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_B3"
+            android:layout_below="@+id/et_B2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Surjomukhi 3"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/btn_B3"
+            android:layout_below="@+id/et_B2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="#FF9800"
+            android:layout_marginLeft="280dp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_B4"
+            android:layout_below="@+id/et_B3"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Surjomukhi 4"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/btn_B4"
+            android:layout_below="@+id/et_B3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="#FF9800"
+            android:layout_marginLeft="280dp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_B5"
+            android:layout_below="@+id/et_B4"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Surjomukhi 5"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/btn_B5"
+            android:layout_below="@+id/et_B4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="#FF9800"
+            android:layout_marginLeft="280dp"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+    </ScrollView>
+
+    //footer
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg1"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/home_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="0dp"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="home"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/nearMe_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_toRightOf="@+id/home_btn_tv"
+            android:drawableTop="@drawable/ic_baseline_near_me_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Near"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/preBook_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_toLeftOf="@+id/home_btn_tv"
+            android:drawableTop="@drawable/ic_baseline_book_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Booking"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/eTicket_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_toLeftOf="@+id/preBook_btn_tv"
+            android:drawableTop="@drawable/ic_baseline_note_add_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Eticket"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/settings_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_toRightOf="@+id/nearMe_btn_tv"
+            android:drawableTop="@drawable/ic_baseline_settings_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Settings"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

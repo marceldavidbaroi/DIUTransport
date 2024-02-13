@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg1"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/window_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:text="Pre-book"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_header"
+        android:fillViewport="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_header"
+            android:background="@drawable/bg1">
+
+            <TextView
+                android:id="@+id/intro_tv"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="Pre-Booking your travel will help us to organize our buses and give you a better travel experience"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/Bus_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intro_tv"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="Bus Type"
+                android:textSize="16dp"
+                android:textColor="@color/white"/>
+
+            <RadioGroup
+                android:id="@+id/Bus_type_radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Bus_type_tv"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white">
+                <!--radio button-->
+                <RadioButton
+                    android:id="@+id/radio_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="General"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+
+                <RadioButton
+                    android:id="@+id/radio_Faculty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/choose_destination_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Bus_type_radioGroup"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="Choose Destination"
+                android:textSize="16dp"
+                android:textColor="@color/white"/>
+
+            <!-- //choose from with spinner-->
+
+            <TextView
+                android:id="@+id/from_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/choose_destination_tv"
+                android:layout_marginLeft="40dp"
+                android:text="From"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+
+
+            <!--//choose to with spinner-->
+
+            <Spinner
+                android:id="@+id/destination_spinner_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/from_tv"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="60dp" />
+
+            <TextView
+                android:id="@+id/to_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/from_tv"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:text="To"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+
+            <Spinner
+                android:id="@+id/destination_spinner_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/to_tv"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="60dp" />
+
+            <!--time -->
+
+            <TextView
+                android:id="@+id/choose_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/destination_spinner_to"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:text="Choose Time"
+                android:textSize="16dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/choose_time_tv"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:text="Time"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+
+                />
+
+            <Spinner
+                android:id="@+id/time_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_tv"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="60dp" />
+
+            <Button
+                android:id="@+id/preBook_btn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_spinner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#FF9800"
+                android:text="Book"
+                android:textSize="12dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/layout_footer_white"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/preBook_btn"
+                android:background="@drawable/bg1"
+                android:padding="20dp"
+                ></RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+<!--footer-->
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg1"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/home_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="0dp"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="home"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/nearMe_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_toRightOf="@+id/home_btn_tv"
+            android:drawableTop="@drawable/ic_baseline_near_me_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Near"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/preBook_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_toLeftOf="@+id/home_btn_tv"
+            android:drawableTop="@drawable/ic_baseline_book_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Booking"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/eTicket_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_toLeftOf="@+id/preBook_btn_tv"
+            android:drawableTop="@drawable/ic_baseline_note_add_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Eticket"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/settings_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_toRightOf="@+id/nearMe_btn_tv"
+            android:drawableTop="@drawable/ic_baseline_settings_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Settings"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

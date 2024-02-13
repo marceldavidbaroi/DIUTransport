@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eticket">
+
+    //header
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg1"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/window_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:text="E-Ticket"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_header"
+        android:fillViewport="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_header"
+            android:background="@drawable/bg1"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#4DFFFFFF">
+
+                <TextView
+                    android:id="@+id/Ticket_heading_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:drawableLeft="@drawable/diu_logo"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="DIU Transport"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+                <!--bus type-->
+                <TextView
+                    android:id="@+id/BusType_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Ticket_heading_tv"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="BusType: "
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BusTypeValue_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Ticket_heading_tv"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+                <!--destination-->
+                <!--From-->
+                <TextView
+                    android:id="@+id/destinFrom_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BusType_tv"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="From: "
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/destinFromValue_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BusType_tv"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+
+
+                <!--To-->
+                <TextView
+                    android:id="@+id/destinTo_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/destinFrom_tv"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="To: "
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/destinToValue_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/destinFrom_tv"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+                <!--To-->
+                <TextView
+                    android:id="@+id/depTime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/destinTo_tv"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Time: "
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/depTimeValue_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/destinTo_tv"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    //footer
+
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg1"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/home_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="0dp"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="home"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/nearMe_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_toRightOf="@+id/home_btn_tv"
+            android:drawableTop="@drawable/ic_baseline_near_me_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Near"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/preBook_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_toLeftOf="@+id/home_btn_tv"
+            android:drawableTop="@drawable/ic_baseline_book_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Booking"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/eTicket_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_toLeftOf="@+id/preBook_btn_tv"
+            android:drawableTop="@drawable/ic_baseline_note_add_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Eticket"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/settings_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_toRightOf="@+id/nearMe_btn_tv"
+            android:drawableTop="@drawable/ic_baseline_settings_24"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Settings"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

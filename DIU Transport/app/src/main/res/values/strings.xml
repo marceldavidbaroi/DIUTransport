@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">temp</string>
+    <string-array name="Destination">
+        <item>Dhanmondi</item>
+        <item>Uttara - Rajlokkhi</item>
+        <item>Tongi College Gate</item>
+        <item>ECB Chattor</item>
+        <item>Mirpur</item>
+        <item>Konabari Pukur Par</item>
+        <item>Zirabo</item>
+        <item>Ashulia Bazar</item>
+        <item>Baipail </item>
+        <item>Nabinagar </item>
+        <item>C and B</item>
+        <item>Nabinagar</item>
+        <item>Savar</item>
+        <item>Narayanganj Chasara </item>
+        <item>Green Model Town</item>
+        <item>Mugdha Model Thana</item>
+        <item>Malibag</item>
+        <item>Rampura</item>
+        <item>DSC</item>
+
+    </string-array>
+
+    <string-array name="time">
+        <item>6.30 AM</item>
+        <item>7.00 AM</item>
+        <item>9.30 AM</item>
+        <item>10.30 AM</item>
+        <item>2.15 PM</item>
+        <item>1.40 PM</item>
+        <item>3.00 PM</item>
+        <item>4.20 PM</item>
+        <item>5.45 PM</item>
+
+    </string-array>
+</resources>
